@@ -1,0 +1,70 @@
+{
+  "name": "@betagouv/template-nextjs",
+  "version": "1.15.8",
+  "private": true,
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "predev": "only-include-used-icons",
+    "prebuild": "node -r @swc-node/register scripts/prebuild.ts && npm run only-include-used-icons",
+    "only-include-used-icons": "node node_modules/@codegouvfr/react-dsfr/bin/only-include-used-icons.js",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint-staged": "lint-staged",
+    "e2e": "NEXT_PUBLIC_BASE_PATH='' NODE_ENV=production npm run build && npx playwright test",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch"
+  },
+  "dependencies": {
+    "@codegouvfr/react-dsfr": "^1.31.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/server": "^11.11.0",
+    "@emotion/styled": "^11.14.0",
+    "@mantine/charts": "^9.4.1",
+    "@mantine/core": "^9.4.1",
+    "@mantine/hooks": "^9.4.1",
+    "@mdx-js/loader": "^3.1.1",
+    "@mdx-js/react": "^3.1.1",
+    "@next/mdx": "^15.0.0",
+    "@sentry/nextjs": "^8.0.0",
+    "@socialgouv/matomo-next": "^1.11.0",
+    "@tabler/icons-react": "^3.44.0",
+    "next": "^15.0.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "remark-gfm": "^4.0.1",
+    "tss-react": "^4.9.20"
+  },
+  "optionalDependencies": {
+    "@swc/core-linux-arm64-gnu": "^1.15.40"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.0.0",
+    "@playwright/test": "^1.57.0",
+    "@swc-node/register": "^1.11.1",
+    "@swc/core": "^1.15.8",
+    "@testing-library/react": "^16.0.0",
+    "@types/mdx": "^2.0.13",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.60.0",
+    "@typescript-eslint/parser": "^8.60.0",
+    "@vitejs/plugin-react": "^4.7.0",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "^15.0.0",
+    "husky": "^9.1.7",
+    "jsdom": "^25.0.0",
+    "lint-staged": "15.3.0",
+    "node-talisman": "^1.29.22",
+    "sass": "^1.100.0",
+    "typescript": "5.9.3",
+    "vitest": "^2.0.0"
+  }
+}
