@@ -1,4 +1,4 @@
-name: 🌍 Deploy demo
+name: Deploy Minerve
 
 on:
   push:
@@ -12,7 +12,7 @@ concurrency:
 
 jobs:
   build:
-    name: Deployment demo on gh-pages
+    name: Deploy Minerve static site
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -32,12 +32,6 @@ jobs:
         env:
           NODE_ENV: production # JS build mode
           PRODUCTION: true # for environment (ex: robots.txt)
-          SENTRY_URL: https://sentry.incubateur.net
-          SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
-          SENTRY_ORG: betagouv
-          SENTRY_PROJECT: template-nextjs
-          SENTRY_RELEASE_UPLOAD: true
-          SENTRY_LOG_LEVEL: debug
         run: |
           npm run build
           touch out/.nojekyll

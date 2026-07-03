@@ -12,9 +12,9 @@ const { getHtmlAttributes } = createGetHtmlAttributes({
 });
 
 export const metadata: Metadata = {
-  title: "Minerve.fr | Explorer les investissements France 2030",
+  title: "Minerve.fr",
   description:
-    "Prototype de tableau de bord pour relier les investissements publics France 2030 aux signaux réels de l'innovation française.",
+    "Prototype de tableau de bord pour explorer les investissements France 2030 et les signaux réels d'innovation.",
 };
 
 export default function RootLayout({

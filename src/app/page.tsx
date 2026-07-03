@@ -1,173 +1,93 @@
-"use client";
-
-import * as React from "react";
+import { KpiCard } from "@/components/cards/KpiCard";
+import { getProgrammes, getTotalBudget } from "@/data/investments";
+import { formatCompactEuro, formatNumber } from "@/lib/format";
+import { routes } from "@/lib/routes";
+import { Group, SimpleGrid, Stack, Text, Title } from "@mantine/core";
+import {
+  IconArrowRight,
+  IconChartPie,
+  IconFileAnalytics,
+  IconSearch,
+} from "@tabler/icons-react";
 import Link from "next/link";
 
-import { push as matomoPush } from "@socialgouv/matomo-next";
-import { Accordion } from "@codegouvfr/react-dsfr/Accordion";
-import { Button } from "@codegouvfr/react-dsfr/Button";
-import { fr } from "@codegouvfr/react-dsfr";
-
-export default function Home() {
-  const onClick1 = () => {
-    throw new Error("Hello, sentry");
-  };
+export default function HomePage() {
+  const programmes = getProgrammes();
 
   return (
-    <div className={fr.cx("fr-grid-row", "fr-grid-row--center")}>
-      <div className={fr.cx("fr-col-12")}>
-        <h1>Template</h1>
-        Ce template minimal en Next.js met en oeuvre les pratiques recommandées
-        chez betagouv et peut vous faire <b>gagner du temps</b>.
-        <br />
-        <br />
-        Il permet de déployer rapidement une application web qui respecte nos
-        standards de <b>conformité, accessibilité et sécurité</b>.
-        <br />
-        <br />
-        Vous pouvez vous en servir comme base de départ ou comme référence
-        d&apos;implémentation.{" "}
-        <b>
-          <a
-            href="https://github.com/betagouv/template-nextjs"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            Les contributions sont bienvenues.
-          </a>
-        </b>
-        <br />
-        <br />
-        <Accordion label="🇫🇷 Système de design de l'état (DSFR)" titleAs="h2">
-          Intègre la dernière version du kit{" "}
-          <a
-            href="https://github.com/codegouvfr/react-dsfr"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            @codegouvfr/react-dsfr
-          </a>
-          . Compatible avec{" "}
-          <a href="https://mui.com" target="_blank" rel="noreferrer noopener">
-            la librairie MUI
-          </a>
-          .<br />
-          <br />
-        </Accordion>
-        <Accordion label="📊 Matomo Analytics" titleAs="h2">
-          Intègre le tracker matomo pour analyser l&apos;usage du service.
-          <br />
-          <br />
-          Le lien de désinscription réglementaire est intégré dans la politique
-          de confidentialité.
-        </Accordion>
-        <Accordion label="🚨 Alertes sentry" titleAs="h2">
-          Intègre une sonde sentry pour être alerté en temps réel des erreurs
-          applicatives et monitorer les performances de votre service.
-        </Accordion>
-        <Accordion label="⚖️ Conformité juridique" titleAs="h2">
-          Des modèles pré-rédigés pour :
-          <ul>
-            <li>
-              <Link href="/accessibilite">
-                Déclaration d&apos;accessibilité numérique
-              </Link>
-            </li>
-            <li>
-              <Link href="/cgu">Conditions d&apos;utilisation</Link>
-            </li>
-            <li>
-              <Link href="/mentions-legales">Mentions légales</Link>
-            </li>
-            <li>
-              <Link href="/politique-confidentialite">
-                Politique de confidentialité
-              </Link>
-            </li>
-          </ul>
-        </Accordion>
-        <Accordion label="✅ Standards beta" titleAs="h2">
-          <ul>
-            <li>Site web accessible</li>
-            <li>
-              <Link href="/stats">Page de statistiques</Link> pour suivre les
-              KPIs
-            </li>
-            <li>
-              <Link href="/budget">Page de budget</Link> pour publier son budget
-            </li>
-            <li>
-              <Link href="/aide">Page d&apos;aide</Link> vos usager(e)s
-            </li>
-          </ul>
-        </Accordion>
-        <Accordion label="🔐 Sécurité" titleAs="h2">
-          <ul>
-            <li>Gestion des headers CSP</li>
-            <li>Image docker root-less</li>
-            <li>Pre-commit hooks anti fuite de secrets</li>
-          </ul>
-        </Accordion>
-        <Accordion label="🔎 Testing" titleAs="h2">
-          <ul>
-            <li>
-              Testing de bout-en-bout avec{" "}
-              <a
-                target="_blank"
-                rel="noreferrer noopener"
-                href="https://playwright.dev"
-              >
-                Playwright
-              </a>
-            </li>
-            <li>
-              Tests unitaires avec{" "}
-              <a
-                target="_blank"
-                rel="noreferrer noopener"
-                href="https://vitest.dev"
-              >
-                vitest
-              </a>
-            </li>
-            <li>CI de lint, test et scan statique</li>
-          </ul>
-        </Accordion>
-        <Accordion label="📦 Delivery" titleAs="h2">
-          <ul>
-            <li>
-              Workflows de release automatisés (
-              <a
-                target="_blank"
-                rel="noreferrer noopener"
-                href="https://github.com/semantic-release/semantic-release"
-              >
-                semantic-release
-              </a>
-              )
-            </li>
-            <li>Compatible scalingo, clever cloud avec des reviews-branches</li>
-          </ul>
-        </Accordion>
-        <h2 className={fr.cx("fr-mt-4w")}>Exemples d&apos;intégrations</h2>
-        <Button
-          title="Trigger sentry event"
-          onClick={onClick1}
-          priority="secondary"
-          className={fr.cx("fr-mr-1w")}
-        >
-          Déclencher une erreur Sentry
-        </Button>
-        <Button
-          title="Trigger matomo event"
-          priority="secondary"
-          onClick={() => {
-            matomoPush(["trackEvent", "click", "home"]);
-          }}
-        >
-          Déclencher un évènement Matomo
-        </Button>
-      </div>
-    </div>
+    <Stack gap="4rem">
+      <section className="hero-section">
+        <Stack gap="lg" maw={860}>
+          <Text c="blueFrance.9" fw={800} size="sm" tt="uppercase">
+            Hackathon Assemblée Nationale 2026
+          </Text>
+          <Title order={1}>
+            Explorer les investissements publics à travers les signaux réels de
+            l'innovation.
+          </Title>
+          <Text c="dimmed" size="xl">
+            Minerve.fr relie les lignes budgétaires France 2030 à des signaux
+            mockés mais structurés : startups, brevets, emplois, chiffre
+            d'affaires, territoires et mentions parlementaires.
+          </Text>
+          <Group>
+            <Link className="primary-button" href={routes.investments}>
+              Voir les investissements
+              <IconArrowRight size={18} />
+            </Link>
+            <Link
+              className="secondary-button"
+              href={routes.investmentReport("424")}
+            >
+              Ouvrir un rapport
+            </Link>
+          </Group>
+        </Stack>
+      </section>
+
+      <SimpleGrid cols={{ base: 1, md: 3 }} spacing="lg">
+        <KpiCard
+          description="Somme mockée des lignes 2026 intégrées au POC."
+          label="Budget 2026"
+          value={formatCompactEuro(getTotalBudget("2026"))}
+        />
+        <KpiCard
+          description="Types d'investissement reliés à un rapport slide."
+          label="Programmes"
+          value={formatNumber(programmes.length)}
+        />
+        <KpiCard
+          description="Données fictives à remplacer par API, CSV et MCP."
+          label="Mode"
+          value="Mock"
+        />
+      </SimpleGrid>
+
+      <SimpleGrid cols={{ base: 1, md: 3 }} spacing="lg">
+        {[
+          {
+            icon: <IconChartPie size={28} />,
+            title: "Comprendre la répartition",
+            text: "Un camembert donne la part relative de chaque programme France 2030.",
+          },
+          {
+            icon: <IconSearch size={28} />,
+            title: "Relier les signaux",
+            text: "Chaque action est rapprochée de signaux économiques, scientifiques et parlementaires.",
+          },
+          {
+            icon: <IconFileAnalytics size={28} />,
+            title: "Raconter un rapport",
+            text: "Une page par programme présente l'analyse comme une suite de slides lisibles.",
+          },
+        ].map((item) => (
+          <div className="feature-card" key={item.title}>
+            {item.icon}
+            <Title order={3}>{item.title}</Title>
+            <Text c="dimmed">{item.text}</Text>
+          </div>
+        ))}
+      </SimpleGrid>
+    </Stack>
   );
 }
