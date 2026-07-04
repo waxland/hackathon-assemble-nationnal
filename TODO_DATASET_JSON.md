@@ -1,8 +1,10 @@
-# TODO DATASET JSON - Contrat DATA Minerve
+# Contrat DATA - Hackathon Minerve (France 2030 / SNA)
 
 ## Objectif
 
-Ce document sert de contrat de remplissage pour l'équipe DATA. L'objectif est de remplacer progressivement les mocks par des données réelles sans changer la structure des fichiers ni les composants front.
+Ce document sert de contrat de remplissage pour l'équipe DATA. L'objectif est de remplacer progressivement les mocks par des données réelles sans changer la structure des fichiers ni les composants front. 
+
+L'ambition est d'alimenter les "Stratégies Nationales d'Accélération" (SNA) de France 2030 en reliant le budget voté aux signaux d'innovation réels.
 
 Règle de base :
 
