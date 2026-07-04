@@ -4,7 +4,7 @@ export default function PresentationFigmaPage() {
   return (
     <Container py="xl" size="xl">
       <Stack gap="xl">
-        <Title order={1}>Pitch Deck (Figma)</Title>
+        <Title order={1}>Pitch Deck</Title>
         <Center>
           <iframe
             allowFullScreen

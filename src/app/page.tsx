@@ -1,5 +1,5 @@
-import { AssetIcon, type AssetIconName } from "@/components/icons/AssetIcon";
 import { KpiCard } from "@/components/cards/KpiCard";
+import { AssetIcon, type AssetIconName } from "@/components/icons/AssetIcon";
 import { getProgrammes, getTotalBudget } from "@/data/investments";
 import { formatCompactEuro, formatNumber } from "@/lib/format";
 import { routes } from "@/lib/routes";
@@ -53,9 +53,10 @@ export default function HomePage() {
             l'innovation.
           </Title>
           <Text c="dimmed" size="xl">
-            Minerve relie les Stratégies Nationales d’Accélération (SNA) de France 2030 à des signaux
-            mockés mais structurés : startups, brevets, emplois, chiffre
-            d'affaires, territoires et mentions parlementaires.
+            Minerve relie les Stratégies Nationales d’Accélération (SNA) de
+            France 2030 à des signaux mockés mais structurés : startups,
+            brevets, emplois, chiffre d'affaires, territoires et mentions
+            parlementaires.
           </Text>
           <Group>
             <Link className="primary-button" href={routes.investments}>
@@ -70,6 +71,9 @@ export default function HomePage() {
             </Link>
             <Link className="secondary-button" href={routes.presentationFigma}>
               Pitch Deck (Figma)
+            </Link>
+            <Link className="secondary-button" href={routes.exploration}>
+              Exploration (Nuage de points)
             </Link>
           </Group>
         </Stack>

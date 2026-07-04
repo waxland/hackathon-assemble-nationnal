@@ -4,4 +4,5 @@ export const routes = {
   investmentReport: (programmeCode: string) =>
     `/investissements/${programmeCode}`,
   presentationFigma: "/presentation-figma",
+  exploration: "/exploration",
 } as const;
