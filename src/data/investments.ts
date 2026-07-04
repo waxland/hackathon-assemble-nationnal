@@ -103,10 +103,34 @@ export type InvestmentProgramme = {
   report: InvestmentReport;
 };
 
+export type ProgrammePieData = {
+  name: string;
+  programmeCode: string;
+  programmeName: string;
+  value: number;
+  color: string;
+  share: number;
+  linesCount: number;
+};
+
+export type ExpenseCategoryKey =
+  | "fonctionnement"
+  | "intervention"
+  | "operationsFinancieres"
+  | "autres";
+
+export type ProgrammeExpenseCategoryRow = {
+  programme: string;
+  programmeCode: string;
+  programmeName: string;
+  total: number;
+} & Record<ExpenseCategoryKey, number>;
+
 export const budgetLines = budgetLinesJson as BudgetLine[];
 
 const reportMetadataByProgramme = reportMetadataJson as Record<string, InvestmentReportBase>;
 const reportDatavizByProgramme = reportDatavizJson as Record<string, ProgrammeDataviz>;
+const programmeColors = ["#000091", "#18753c", "#d64f7f", "#6a6af4", "#8d533e"];
 
 export function getAmount(line: BudgetLine, year: BudgetYear): number {
   if (year === "2024") return line.amount2024;
@@ -145,14 +169,79 @@ export function getProgramme(programmeCode: string): InvestmentProgramme | undef
   return getProgrammes().find((programme) => programme.programmeCode === programmeCode);
 }
 
-export function getPieData() {
-  const colors = ["#000091", "#18753c", "#d64f7f", "#6a6af4", "#8d533e"];
+export function getPieData(year: BudgetYear = "2026"): ProgrammePieData[] {
+  const total = getTotalBudget(year);
+  const grouped = new Map<string, { name: string; amount: number; linesCount: number }>();
 
-  return getProgrammes().map((programme, index) => ({
-    name: `${programme.programmeCode} - ${programme.programmeName}`,
-    value: programme.amount2026,
-    color: colors[index % colors.length],
-  }));
+  budgetLines.forEach((line) => {
+    const current = grouped.get(line.programmeCode);
+    grouped.set(line.programmeCode, {
+      name: line.programmeName,
+      amount: (current?.amount ?? 0) + getAmount(line, year),
+      linesCount: (current?.linesCount ?? 0) + 1,
+    });
+  });
+
+  return Array.from(grouped.entries())
+    .map(([programmeCode, programme], index) => ({
+      name: `${programmeCode} - ${programme.name}`,
+      programmeCode,
+      programmeName: programme.name,
+      value: programme.amount,
+      color: programmeColors[index % programmeColors.length],
+      share: total > 0 ? programme.amount / total : 0,
+      linesCount: programme.linesCount,
+    }))
+    .sort((left, right) => right.value - left.value)
+    .map((item, index) => ({
+      ...item,
+      color: programmeColors[index % programmeColors.length],
+    }));
+}
+
+export function getProgrammeExpenseCategoryRows(
+  year: BudgetYear = "2026",
+): ProgrammeExpenseCategoryRow[] {
+  const rows = new Map<string, ProgrammeExpenseCategoryRow>();
+
+  budgetLines.forEach((line) => {
+    const programme = rows.get(line.programmeCode) ?? {
+      programme: line.programmeCode,
+      programmeCode: line.programmeCode,
+      programmeName: line.programmeName,
+      total: 0,
+      fonctionnement: 0,
+      intervention: 0,
+      operationsFinancieres: 0,
+      autres: 0,
+    };
+    const amount = getAmount(line, year);
+    const categoryKey = getExpenseCategoryKey(line.expenseCategoryName);
+
+    programme.total += amount;
+    programme[categoryKey] += amount;
+    rows.set(line.programmeCode, programme);
+  });
+
+  return Array.from(rows.values()).sort((left, right) => right.total - left.total);
+}
+
+function getExpenseCategoryKey(categoryName: string): ExpenseCategoryKey {
+  const normalizedCategory = categoryName.toLowerCase();
+
+  if (normalizedCategory.includes("fonctionnement")) {
+    return "fonctionnement";
+  }
+
+  if (normalizedCategory.includes("intervention")) {
+    return "intervention";
+  }
+
+  if (normalizedCategory.includes("opérations financières")) {
+    return "operationsFinancieres";
+  }
+
+  return "autres";
 }
 
 function getReport(programmeCode: string): InvestmentReport {

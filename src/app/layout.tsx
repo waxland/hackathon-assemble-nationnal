@@ -34,12 +34,6 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="icon" href="/favicon.png" type="image/png" />
         <link rel="apple-touch-icon" href="/favicon.png" />
-        {process.env.CONTENT_SECURITY_POLICY && (
-          <meta
-            httpEquiv="Content-Security-Policy"
-            content={process.env.CONTENT_SECURITY_POLICY}
-          />
-        )}
       </head>
       <body>
         <Providers>{children}</Providers>

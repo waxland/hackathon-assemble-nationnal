@@ -68,6 +68,12 @@ export default function HomePage() {
             >
               Ouvrir un rapport
             </Link>
+            <Link className="secondary-button" href={routes.presentationFigma}>
+              Pitch Deck (Figma)
+            </Link>
+            <Link className="secondary-button" href={routes.presentation}>
+              Pitch Deck (Texte)
+            </Link>
           </Group>
         </Stack>
       </section>
