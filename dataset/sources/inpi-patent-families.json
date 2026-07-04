@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "1.0.0",
+  "updatedAt": "2026-07-04",
+  "isMock": true,
+  "programmes": {
+    "421": {
+      "patentFamilies": [
+        {
+          "patentFamilyId": "mock-inpi-421-optical-instrumentation",
+          "title": "Système d'instrumentation optique pour plateformes de recherche",
+          "applicants": ["CNRS", "LabScale"],
+          "publicationYear": 2025,
+          "technologyCodes": ["G01J", "G02B"],
+          "territory": "Grenoble",
+          "matchedKeywords": ["instrumentation", "plateformes"],
+          "confidence": 0.7,
+          "sourceUrl": ""
+        }
+      ]
+    },
+    "422": {
+      "patentFamilies": [
+        {
+          "patentFamilyId": "mock-inpi-422-biotech-transfer",
+          "title": "Procédé de bioproduction transférable en startup deeptech",
+          "applicants": ["Inserm", "BioPulse"],
+          "publicationYear": 2025,
+          "technologyCodes": ["C12N", "A61K"],
+          "territory": "Lyon",
+          "matchedKeywords": ["deeptech", "brevets", "licences"],
+          "confidence": 0.78,
+          "sourceUrl": ""
+        }
+      ]
+    },
+    "423": {
+      "patentFamilies": [
+        {
+          "patentFamilyId": "mock-inpi-423-robotic-line",
+          "title": "Dispositif robotique modulaire pour ligne de production PME",
+          "applicants": ["RoboLine"],
+          "publicationYear": 2024,
+          "technologyCodes": ["B25J", "G05B"],
+          "territory": "Saint-Étienne",
+          "matchedKeywords": ["robotique", "industrie", "PME"],
+          "confidence": 0.66,
+          "sourceUrl": ""
+        }
+      ]
+    },
+    "424": {
+      "patentFamilies": [
+        {
+          "patentFamilyId": "mock-inpi-424-semiconductor-process",
+          "title": "Procédé bas carbone de gravure pour semi-conducteurs avancés",
+          "applicants": ["ChipFoundry"],
+          "publicationYear": 2025,
+          "technologyCodes": ["H01L", "C23C"],
+          "territory": "Grenoble",
+          "matchedKeywords": ["semi-conducteurs", "souveraineté"],
+          "confidence": 0.84,
+          "sourceUrl": ""
+        }
+      ]
+    },
+    "425": {
+      "patentFamilies": [
+        {
+          "patentFamilyId": "mock-inpi-425-territorial-platform",
+          "title": "Plateforme logicielle de coordination territoriale de projets d'innovation",
+          "applicants": ["ClusterData"],
+          "publicationYear": 2024,
+          "technologyCodes": ["G06Q", "G06F"],
+          "territory": "Dijon",
+          "matchedKeywords": ["pôles", "territoires", "écosystèmes"],
+          "confidence": 0.59,
+          "sourceUrl": ""
+        }
+      ]
+    }
+  }
+}

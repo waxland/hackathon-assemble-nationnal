@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "1.0.0",
+  "updatedAt": "2026-07-04",
+  "isMock": true,
+  "methodology": {
+    "scoreScale": "0-100",
+    "weights": {
+      "budget": 0.25,
+      "patents": 0.2,
+      "companies": 0.2,
+      "territories": 0.15,
+      "parliament": 0.2
+    },
+    "notes": "Scores mockés. Les valeurs réelles devront être recalculées après ingestion des sources."
+  },
+  "programmes": {
+    "421": {
+      "globalScore": 71,
+      "dimensions": [
+        { "dimension": "budget", "score": 78, "rationale": "Socle budgétaire stable mais en baisse." },
+        { "dimension": "patents", "score": 72, "rationale": "Signal brevets modéré sur instrumentation et plateformes." },
+        { "dimension": "companies", "score": 67, "rationale": "Écosystème plus académique qu'entrepreneurial." },
+        { "dimension": "territories", "score": 74, "rationale": "Territoires scientifiques bien identifiés." },
+        { "dimension": "parliament", "score": 62, "rationale": "Attention parlementaire régulière mais diffuse." }
+      ]
+    },
+    "422": {
+      "globalScore": 68,
+      "dimensions": [
+        { "dimension": "budget", "score": 64, "rationale": "Budget limité mais ciblé." },
+        { "dimension": "patents", "score": 83, "rationale": "Signal brevet très aligné avec la valorisation." },
+        { "dimension": "companies", "score": 69, "rationale": "Startups deeptech plausibles mais à qualifier." },
+        { "dimension": "territories", "score": 66, "rationale": "Quelques pôles de transfert visibles." },
+        { "dimension": "parliament", "score": 58, "rationale": "Sujet technique moins visible politiquement." }
+      ]
+    },
+    "423": {
+      "globalScore": 70,
+      "dimensions": [
+        { "dimension": "budget", "score": 59, "rationale": "Trajectoire budgétaire discontinue." },
+        { "dimension": "patents", "score": 61, "rationale": "Innovation souvent logicielle ou process." },
+        { "dimension": "companies", "score": 82, "rationale": "Base PME/ETI importante." },
+        { "dimension": "territories", "score": 75, "rationale": "Territoires industriels cohérents." },
+        { "dimension": "parliament", "score": 71, "rationale": "Sujet réindustrialisation très visible." }
+      ]
+    },
+    "424": {
+      "globalScore": 83,
+      "dimensions": [
+        { "dimension": "budget", "score": 94, "rationale": "Budget dominant dans le périmètre." },
+        { "dimension": "patents", "score": 87, "rationale": "Filières fortement technologiques." },
+        { "dimension": "companies", "score": 72, "rationale": "Écosystème plus concentré." },
+        { "dimension": "territories", "score": 78, "rationale": "Pôles stratégiques identifiables." },
+        { "dimension": "parliament", "score": 86, "rationale": "Attention élevée sur souveraineté." }
+      ]
+    },
+    "425": {
+      "globalScore": 79,
+      "dimensions": [
+        { "dimension": "budget", "score": 82, "rationale": "Budget élevé de soutien structurel." },
+        { "dimension": "patents", "score": 65, "rationale": "Signal brevet indirect." },
+        { "dimension": "companies", "score": 88, "rationale": "Nombre d'acteurs élevé." },
+        { "dimension": "territories", "score": 91, "rationale": "Programme fortement territorial." },
+        { "dimension": "parliament", "score": 69, "rationale": "Attention parlementaire stable." }
+      ]
+    }
+  }
+}

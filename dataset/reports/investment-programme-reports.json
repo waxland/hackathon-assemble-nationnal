@@ -1,0 +1,127 @@
+{
+  "421": {
+    "programmeCode": "421",
+    "title": "Recherche, enseignement supérieur et infrastructures scientifiques",
+    "summary": "Un programme de socle qui finance les capacités scientifiques, les plateformes et les compétences nécessaires aux futures filières d'innovation.",
+    "budgetUse": "Financer les dispositifs d'enseignement, les équipements et les projets de recherche structurants.",
+    "keywords": ["recherche", "talents", "laboratoires", "plateformes"],
+    "ecosystem": {
+      "companies": 934,
+      "jobs": 32800,
+      "revenue": 3600000000,
+      "territories": ["Paris-Saclay", "Grenoble", "Toulouse"]
+    },
+    "startups": [
+      { "name": "LabScale", "city": "Grenoble", "maturity": "Series B", "jobs": 72 },
+      { "name": "QuantEdu", "city": "Paris", "maturity": "Series A", "jobs": 24 },
+      { "name": "Instrumenta", "city": "Toulouse", "maturity": "Scale-up", "jobs": 41 }
+    ],
+    "parliament": {
+      "mentions": 57,
+      "trend": "Stable",
+      "topics": ["recherche publique", "doctorants", "transfert"]
+    },
+    "strengths": ["Socle scientifique dense", "Capacité de formation élevée", "Territoires universitaires identifiés"],
+    "openQuestions": ["Quels laboratoires produisent les signaux transférables ?", "Quels effets territoriaux mesurer ?"]
+  },
+  "422": {
+    "programmeCode": "422",
+    "title": "Valorisation de la recherche et transfert deeptech",
+    "summary": "Un programme orienté maturation technologique, brevets publics, licences et création de startups issues de la recherche.",
+    "budgetUse": "Accélérer le passage du laboratoire au marché par des preuves de concept et des outils de transfert.",
+    "keywords": ["deeptech", "brevets", "SATT", "licences"],
+    "ecosystem": {
+      "companies": 1125,
+      "jobs": 29000,
+      "revenue": 3400000000,
+      "territories": ["Lyon", "Nancy", "Bordeaux"]
+    },
+    "startups": [
+      { "name": "BioPulse", "city": "Lyon", "maturity": "Series B", "jobs": 88 },
+      { "name": "MatForge", "city": "Nancy", "maturity": "Series A", "jobs": 33 },
+      { "name": "NanoBridge", "city": "Bordeaux", "maturity": "Seed", "jobs": 18 }
+    ],
+    "parliament": {
+      "mentions": 42,
+      "trend": "En hausse",
+      "topics": ["brevets publics", "deeptech", "SATT"]
+    },
+    "strengths": ["Brevets en progression", "Signal deeptech lisible", "Chaîne de maturation claire"],
+    "openQuestions": ["Quels brevets deviennent des produits ?", "Quel délai moyen de transfert ?"]
+  },
+  "423": {
+    "programmeCode": "423",
+    "title": "Modernisation industrielle et diffusion numérique",
+    "summary": "Un programme centré sur l'adoption de technologies par les entreprises, la robotique, les logiciels industriels et la productivité.",
+    "budgetUse": "Soutenir la modernisation de PME et ETI, notamment dans les chaînes industrielles.",
+    "keywords": ["industrie", "PME", "robotique", "numérique"],
+    "ecosystem": {
+      "companies": 1510,
+      "jobs": 47800,
+      "revenue": 6290000000,
+      "territories": ["Nantes", "Saint-Étienne", "Lille"]
+    },
+    "startups": [
+      { "name": "FactoryOS", "city": "Nantes", "maturity": "Scale-up", "jobs": 120 },
+      { "name": "RoboLine", "city": "Saint-Étienne", "maturity": "Series B", "jobs": 54 },
+      { "name": "MaintenIA", "city": "Lille", "maturity": "Series A", "jobs": 26 }
+    ],
+    "parliament": {
+      "mentions": 65,
+      "trend": "En hausse",
+      "topics": ["réindustrialisation", "PME", "robotisation"]
+    },
+    "strengths": ["Signal entrepreneurial dense", "Lien direct avec PME industrielles", "Attention parlementaire élevée"],
+    "openQuestions": ["Quels secteurs captent réellement l'aide ?", "Comment mesurer les gains de productivité ?"]
+  },
+  "424": {
+    "programmeCode": "424",
+    "title": "Investissements stratégiques et souveraineté",
+    "summary": "Le programme le plus massif, lié aux filières critiques : énergie, spatial, semi-conducteurs, santé et technologies souveraines.",
+    "budgetUse": "Financer des investissements à forte intensité capitalistique dans les filières stratégiques.",
+    "keywords": ["souveraineté", "énergie", "semi-conducteurs", "spatial"],
+    "ecosystem": {
+      "companies": 766,
+      "jobs": 68100,
+      "revenue": 24100000000,
+      "territories": ["Grenoble", "Toulouse", "Marseille"]
+    },
+    "startups": [
+      { "name": "HelioGrid", "city": "Marseille", "maturity": "Scale-up", "jobs": 134 },
+      { "name": "ChipFoundry", "city": "Grenoble", "maturity": "Series B", "jobs": 82 },
+      { "name": "OrbitalFab", "city": "Toulouse", "maturity": "Series B", "jobs": 61 }
+    ],
+    "parliament": {
+      "mentions": 103,
+      "trend": "En hausse",
+      "topics": ["souveraineté industrielle", "énergie", "spatial"]
+    },
+    "strengths": ["Budget très aligné avec les filières critiques", "Forte densité brevets", "Attention parlementaire robuste"],
+    "openQuestions": ["Quelle part atteint les PME innovantes ?", "Quels retours territoriaux objectiver ?"]
+  },
+  "425": {
+    "programmeCode": "425",
+    "title": "Écosystèmes territoriaux d'innovation",
+    "summary": "Un programme de maillage : incubateurs, pôles, plateformes territoriales et dispositifs qui rendent l'innovation plus diffuse.",
+    "budgetUse": "Financer les structures qui relient entreprises, recherche, territoires et accompagnement.",
+    "keywords": ["territoires", "incubateurs", "pôles", "écosystèmes"],
+    "ecosystem": {
+      "companies": 2440,
+      "jobs": 35900,
+      "revenue": 2900000000,
+      "territories": ["Rennes", "Dijon", "Montpellier"]
+    },
+    "startups": [
+      { "name": "TerritoiresLab", "city": "Rennes", "maturity": "Series A", "jobs": 44 },
+      { "name": "ClusterData", "city": "Dijon", "maturity": "Series A", "jobs": 31 },
+      { "name": "IncubAct", "city": "Montpellier", "maturity": "Acteur public", "jobs": 19 }
+    ],
+    "parliament": {
+      "mentions": 74,
+      "trend": "Stable",
+      "topics": ["territoires d'innovation", "pôles", "incubateurs"]
+    },
+    "strengths": ["Signal territorial large", "Startups nombreuses", "Rôle de maillage inter-filières"],
+    "openQuestions": ["Quels territoires sont sous-couverts ?", "Quels indicateurs relient soutien structurel et croissance ?"]
+  }
+}

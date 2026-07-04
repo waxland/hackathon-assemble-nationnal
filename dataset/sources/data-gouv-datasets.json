@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "1.0.0",
+  "updatedAt": "2026-07-04",
+  "isMock": true,
+  "programmes": {
+    "421": {
+      "datasets": [
+        {
+          "datasetId": "mock-data-gouv-421-lab-platforms",
+          "title": "Plateformes scientifiques financées France 2030",
+          "producer": "Ministère de l'Enseignement supérieur et de la Recherche",
+          "license": "Licence Ouverte 2.0",
+          "granularity": "plateforme",
+          "lastModifiedAt": "2026-01-15",
+          "landingPageUrl": "",
+          "apiUrl": "",
+          "matchedKeywords": ["plateformes", "laboratoires", "équipements"],
+          "confidence": 0.72,
+          "notes": "Mock de jeu de données attendu pour rattacher les infrastructures au programme 421."
+        }
+      ]
+    },
+    "422": {
+      "datasets": [
+        {
+          "datasetId": "mock-data-gouv-422-transfer-projects",
+          "title": "Projets de maturation et transfert deeptech",
+          "producer": "Opérateur France 2030",
+          "license": "Licence Ouverte 2.0",
+          "granularity": "projet",
+          "lastModifiedAt": "2026-02-20",
+          "landingPageUrl": "",
+          "apiUrl": "",
+          "matchedKeywords": ["deeptech", "SATT", "brevets", "licences"],
+          "confidence": 0.76,
+          "notes": "Mock de catalogue de projets de valorisation."
+        }
+      ]
+    },
+    "423": {
+      "datasets": [
+        {
+          "datasetId": "mock-data-gouv-423-industrial-modernization",
+          "title": "PME et ETI accompagnées en modernisation industrielle",
+          "producer": "Direction générale des Entreprises",
+          "license": "Licence Ouverte 2.0",
+          "granularity": "entreprise",
+          "lastModifiedAt": "2026-03-05",
+          "landingPageUrl": "",
+          "apiUrl": "",
+          "matchedKeywords": ["industrie", "PME", "robotisation", "numérique"],
+          "confidence": 0.69,
+          "notes": "Mock de liste d'entreprises aidées à enrichir par SIREN."
+        }
+      ]
+    },
+    "424": {
+      "datasets": [
+        {
+          "datasetId": "mock-data-gouv-424-strategic-sectors",
+          "title": "Investissements dans les filières stratégiques",
+          "producer": "Secrétariat général pour l'investissement",
+          "license": "Licence Ouverte 2.0",
+          "granularity": "projet",
+          "lastModifiedAt": "2026-02-28",
+          "landingPageUrl": "",
+          "apiUrl": "",
+          "matchedKeywords": ["énergie", "spatial", "semi-conducteurs", "souveraineté"],
+          "confidence": 0.81,
+          "notes": "Mock prioritaire pour le rapport 424, le plus budgétairement massif."
+        }
+      ]
+    },
+    "425": {
+      "datasets": [
+        {
+          "datasetId": "mock-data-gouv-425-innovation-ecosystems",
+          "title": "Structures territoriales d'accompagnement à l'innovation",
+          "producer": "Bpifrance / collectivités",
+          "license": "Licence Ouverte 2.0",
+          "granularity": "structure",
+          "lastModifiedAt": "2026-01-30",
+          "landingPageUrl": "",
+          "apiUrl": "",
+          "matchedKeywords": ["incubateurs", "pôles", "territoires", "écosystèmes"],
+          "confidence": 0.67,
+          "notes": "Mock de structures à relier aux territoires et startups accompagnées."
+        }
+      ]
+    }
+  }
+}

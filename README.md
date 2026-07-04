@@ -1,4 +1,4 @@
-# Minerve.fr
+# Minerve
 
 POC Next.js pour explorer les investissements France 2030 et les relier à des signaux d'innovation mockés.
 
@@ -45,7 +45,7 @@ npm run build
 
 ## Données
 
-Toutes les données sont mockées dans `src/data/investments.ts`.
+Les données brutes sont mockées dans `dataset/` et exposées au front par `src/data/investments.ts`.
 
 Le prochain objectif est de remplacer progressivement ces mocks par :
 

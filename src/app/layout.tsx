@@ -12,7 +12,7 @@ const { getHtmlAttributes } = createGetHtmlAttributes({
 });
 
 export const metadata: Metadata = {
-  title: "Minerve.fr",
+  title: "Minerve",
   description:
     "Prototype de tableau de bord pour explorer les investissements France 2030 et les signaux réels d'innovation.",
 };
@@ -30,7 +30,10 @@ export default function RootLayout({
           preloadFonts={["Marianne-Regular", "Marianne-Medium", "Marianne-Bold"]}
           doDisableFavicon
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="icon" href="/favicon.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
         {process.env.CONTENT_SECURITY_POLICY && (
           <meta
             httpEquiv="Content-Security-Policy"

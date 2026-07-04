@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0.0",
+  "updatedAt": "2026-07-04",
+  "isMock": true,
+  "programmes": {
+    "421": {
+      "keywords": ["recherche", "laboratoires", "plateformes", "doctorants", "formation"],
+      "synonyms": ["enseignement supérieur", "infrastructures scientifiques", "équipements de recherche"],
+      "nafCodes": ["7219Z", "8542Z"],
+      "technologyCodes": ["G01J", "G02B", "G06F"],
+      "territories": ["Paris-Saclay", "Grenoble", "Toulouse"],
+      "timeWindow": { "startYear": 2022, "endYear": 2026 }
+    },
+    "422": {
+      "keywords": ["deeptech", "brevets", "SATT", "licences", "maturation"],
+      "synonyms": ["valorisation", "transfert technologique", "preuve de concept"],
+      "nafCodes": ["7211Z", "7219Z"],
+      "technologyCodes": ["C12N", "A61K", "H04L"],
+      "territories": ["Lyon", "Nancy", "Bordeaux"],
+      "timeWindow": { "startYear": 2022, "endYear": 2026 }
+    },
+    "423": {
+      "keywords": ["industrie", "PME", "robotique", "numérique", "modernisation"],
+      "synonyms": ["industrie du futur", "automatisation", "logiciels industriels"],
+      "nafCodes": ["6201Z", "2829B", "7112B"],
+      "technologyCodes": ["B25J", "G05B", "G06Q"],
+      "territories": ["Nantes", "Saint-Étienne", "Lille"],
+      "timeWindow": { "startYear": 2022, "endYear": 2026 }
+    },
+    "424": {
+      "keywords": ["souveraineté", "énergie", "semi-conducteurs", "spatial", "santé"],
+      "synonyms": ["filières critiques", "technologies souveraines", "investissements stratégiques"],
+      "nafCodes": ["2611Z", "3030Z", "3511Z"],
+      "technologyCodes": ["H01L", "C23C", "B64G"],
+      "territories": ["Grenoble", "Toulouse", "Marseille"],
+      "timeWindow": { "startYear": 2022, "endYear": 2026 }
+    },
+    "425": {
+      "keywords": ["territoires", "incubateurs", "pôles", "écosystèmes", "accompagnement"],
+      "synonyms": ["clusters", "plateformes territoriales", "structures d'innovation"],
+      "nafCodes": ["7022Z", "8299Z", "9499Z"],
+      "technologyCodes": ["G06Q", "G06F"],
+      "territories": ["Rennes", "Dijon", "Montpellier"],
+      "timeWindow": { "startYear": 2022, "endYear": 2026 }
+    }
+  }
+}

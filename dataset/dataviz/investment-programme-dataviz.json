@@ -1,0 +1,227 @@
+{
+  "421": {
+    "budgetHistory": [
+      { "year": "2024", "budget": 200693126 },
+      { "year": "2025", "budget": 188007751 },
+      { "year": "2026", "budget": 142496649 }
+    ],
+    "signalTimeline": [
+      { "year": "2022", "patents": 21, "startups": 7, "parliament": 10 },
+      { "year": "2023", "patents": 25, "startups": 8, "parliament": 11 },
+      { "year": "2024", "patents": 31, "startups": 8, "parliament": 13 },
+      { "year": "2025", "patents": 36, "startups": 9, "parliament": 15 }
+    ],
+    "sourceCoverage": [
+      { "source": "Budget France 2030", "coverageScore": 88 },
+      { "source": "data.gouv.fr", "coverageScore": 46 },
+      { "source": "INPI brevets", "coverageScore": 54 },
+      { "source": "Sirene / INSEE", "coverageScore": 61 },
+      { "source": "CA entreprises", "coverageScore": 38 },
+      { "source": "Assemblée / Sénat", "coverageScore": 63 },
+      { "source": "Tricoteuses", "coverageScore": 44 }
+    ],
+    "sectorDistribution": [
+      { "sector": "Recherche publique", "companies": 310, "patents": 31 },
+      { "sector": "Instrumentation", "companies": 226, "patents": 24 },
+      { "sector": "Calcul scientifique", "companies": 214, "patents": 16 },
+      { "sector": "Formation tech", "companies": 184, "patents": 8 }
+    ],
+    "parliamentarySources": [
+      { "source": "Assemblée nationale", "mentions": 24 },
+      { "source": "Sénat", "mentions": 18 },
+      { "source": "Tricoteuses / Canutes", "mentions": 15 }
+    ],
+    "territorialDistribution": [
+      { "territory": "Paris-Saclay", "companies": 360, "jobs": 13000, "budgetShare": 42 },
+      { "territory": "Grenoble", "companies": 284, "jobs": 10400, "budgetShare": 32 },
+      { "territory": "Toulouse", "companies": 190, "jobs": 6200, "budgetShare": 26 }
+    ],
+    "alignmentScores": [
+      { "dimension": "Budget", "score": 78 },
+      { "dimension": "Brevets", "score": 72 },
+      { "dimension": "Entreprises", "score": 67 },
+      { "dimension": "Territoires", "score": 74 },
+      { "dimension": "Parlement", "score": 62 }
+    ]
+  },
+  "422": {
+    "budgetHistory": [
+      { "year": "2024", "budget": 32161600 },
+      { "year": "2025", "budget": 34287500 },
+      { "year": "2026", "budget": 32071000 }
+    ],
+    "signalTimeline": [
+      { "year": "2022", "patents": 39, "startups": 8, "parliament": 8 },
+      { "year": "2023", "patents": 44, "startups": 10, "parliament": 8 },
+      { "year": "2024", "patents": 47, "startups": 10, "parliament": 10 },
+      { "year": "2025", "patents": 52, "startups": 11, "parliament": 10 }
+    ],
+    "sourceCoverage": [
+      { "source": "Budget France 2030", "coverageScore": 86 },
+      { "source": "data.gouv.fr", "coverageScore": 52 },
+      { "source": "INPI brevets", "coverageScore": 74 },
+      { "source": "Sirene / INSEE", "coverageScore": 58 },
+      { "source": "CA entreprises", "coverageScore": 41 },
+      { "source": "Assemblée / Sénat", "coverageScore": 56 },
+      { "source": "Tricoteuses", "coverageScore": 43 }
+    ],
+    "sectorDistribution": [
+      { "sector": "Deeptech", "companies": 386, "patents": 42 },
+      { "sector": "Biotech", "companies": 228, "patents": 28 },
+      { "sector": "Matériaux", "companies": 246, "patents": 31 },
+      { "sector": "Logiciel scientifique", "companies": 265, "patents": 16 }
+    ],
+    "parliamentarySources": [
+      { "source": "Assemblée nationale", "mentions": 18 },
+      { "source": "Sénat", "mentions": 13 },
+      { "source": "Tricoteuses / Canutes", "mentions": 11 }
+    ],
+    "territorialDistribution": [
+      { "territory": "Lyon", "companies": 430, "jobs": 11200, "budgetShare": 39 },
+      { "territory": "Nancy", "companies": 318, "jobs": 7800, "budgetShare": 28 },
+      { "territory": "Bordeaux", "companies": 277, "jobs": 6800, "budgetShare": 33 }
+    ],
+    "alignmentScores": [
+      { "dimension": "Budget", "score": 64 },
+      { "dimension": "Brevets", "score": 83 },
+      { "dimension": "Entreprises", "score": 69 },
+      { "dimension": "Territoires", "score": 66 },
+      { "dimension": "Parlement", "score": 58 }
+    ]
+  },
+  "423": {
+    "budgetHistory": [
+      { "year": "2024", "budget": 136660000 },
+      { "year": "2025", "budget": 19320000 },
+      { "year": "2026", "budget": 34500000 }
+    ],
+    "signalTimeline": [
+      { "year": "2022", "patents": 16, "startups": 13, "parliament": 12 },
+      { "year": "2023", "patents": 19, "startups": 15, "parliament": 13 },
+      { "year": "2024", "patents": 23, "startups": 16, "parliament": 15 },
+      { "year": "2025", "patents": 26, "startups": 17, "parliament": 16 }
+    ],
+    "sourceCoverage": [
+      { "source": "Budget France 2030", "coverageScore": 83 },
+      { "source": "data.gouv.fr", "coverageScore": 49 },
+      { "source": "INPI brevets", "coverageScore": 47 },
+      { "source": "Sirene / INSEE", "coverageScore": 76 },
+      { "source": "CA entreprises", "coverageScore": 52 },
+      { "source": "Assemblée / Sénat", "coverageScore": 68 },
+      { "source": "Tricoteuses", "coverageScore": 46 }
+    ],
+    "sectorDistribution": [
+      { "sector": "Robotique", "companies": 355, "patents": 24 },
+      { "sector": "Logiciels industriels", "companies": 482, "patents": 18 },
+      { "sector": "Maintenance prédictive", "companies": 306, "patents": 12 },
+      { "sector": "PME manufacturières", "companies": 367, "patents": 9 }
+    ],
+    "parliamentarySources": [
+      { "source": "Assemblée nationale", "mentions": 29 },
+      { "source": "Sénat", "mentions": 21 },
+      { "source": "Tricoteuses / Canutes", "mentions": 15 }
+    ],
+    "territorialDistribution": [
+      { "territory": "Nantes", "companies": 510, "jobs": 16400, "budgetShare": 36 },
+      { "territory": "Saint-Étienne", "companies": 438, "jobs": 14200, "budgetShare": 34 },
+      { "territory": "Lille", "companies": 386, "jobs": 11800, "budgetShare": 30 }
+    ],
+    "alignmentScores": [
+      { "dimension": "Budget", "score": 59 },
+      { "dimension": "Brevets", "score": 61 },
+      { "dimension": "Entreprises", "score": 82 },
+      { "dimension": "Territoires", "score": 75 },
+      { "dimension": "Parlement", "score": 71 }
+    ]
+  },
+  "424": {
+    "budgetHistory": [
+      { "year": "2024", "budget": 3753875009 },
+      { "year": "2025", "budget": 4479895791 },
+      { "year": "2026", "budget": 3606716321 }
+    ],
+    "signalTimeline": [
+      { "year": "2022", "patents": 59, "startups": 21, "parliament": 18 },
+      { "year": "2023", "patents": 68, "startups": 24, "parliament": 21 },
+      { "year": "2024", "patents": 78, "startups": 27, "parliament": 23 },
+      { "year": "2025", "patents": 89, "startups": 28, "parliament": 26 }
+    ],
+    "sourceCoverage": [
+      { "source": "Budget France 2030", "coverageScore": 92 },
+      { "source": "data.gouv.fr", "coverageScore": 57 },
+      { "source": "INPI brevets", "coverageScore": 79 },
+      { "source": "Sirene / INSEE", "coverageScore": 64 },
+      { "source": "CA entreprises", "coverageScore": 49 },
+      { "source": "Assemblée / Sénat", "coverageScore": 82 },
+      { "source": "Tricoteuses", "coverageScore": 54 }
+    ],
+    "sectorDistribution": [
+      { "sector": "Énergie", "companies": 214, "patents": 42 },
+      { "sector": "Semi-conducteurs", "companies": 126, "patents": 38 },
+      { "sector": "Spatial", "companies": 188, "patents": 31 },
+      { "sector": "Santé stratégique", "companies": 238, "patents": 27 }
+    ],
+    "parliamentarySources": [
+      { "source": "Assemblée nationale", "mentions": 48 },
+      { "source": "Sénat", "mentions": 34 },
+      { "source": "Tricoteuses / Canutes", "mentions": 21 }
+    ],
+    "territorialDistribution": [
+      { "territory": "Grenoble", "companies": 248, "jobs": 23800, "budgetShare": 41 },
+      { "territory": "Toulouse", "companies": 219, "jobs": 21600, "budgetShare": 34 },
+      { "territory": "Marseille", "companies": 180, "jobs": 14800, "budgetShare": 25 }
+    ],
+    "alignmentScores": [
+      { "dimension": "Budget", "score": 94 },
+      { "dimension": "Brevets", "score": 87 },
+      { "dimension": "Entreprises", "score": 72 },
+      { "dimension": "Territoires", "score": 78 },
+      { "dimension": "Parlement", "score": 86 }
+    ]
+  },
+  "425": {
+    "budgetHistory": [
+      { "year": "2024", "budget": 1374439597 },
+      { "year": "2025", "budget": 1135897718 },
+      { "year": "2026", "budget": 779661698 }
+    ],
+    "signalTimeline": [
+      { "year": "2022", "patents": 29, "startups": 28, "parliament": 13 },
+      { "year": "2023", "patents": 34, "startups": 31, "parliament": 15 },
+      { "year": "2024", "patents": 41, "startups": 34, "parliament": 17 },
+      { "year": "2025", "patents": 47, "startups": 37, "parliament": 19 }
+    ],
+    "sourceCoverage": [
+      { "source": "Budget France 2030", "coverageScore": 89 },
+      { "source": "data.gouv.fr", "coverageScore": 62 },
+      { "source": "INPI brevets", "coverageScore": 58 },
+      { "source": "Sirene / INSEE", "coverageScore": 72 },
+      { "source": "CA entreprises", "coverageScore": 44 },
+      { "source": "Assemblée / Sénat", "coverageScore": 66 },
+      { "source": "Tricoteuses", "coverageScore": 48 }
+    ],
+    "sectorDistribution": [
+      { "sector": "Incubateurs", "companies": 710, "patents": 16 },
+      { "sector": "Pôles compétitivité", "companies": 620, "patents": 24 },
+      { "sector": "Plateformes territoriales", "companies": 548, "patents": 18 },
+      { "sector": "Accompagnement", "companies": 562, "patents": 9 }
+    ],
+    "parliamentarySources": [
+      { "source": "Assemblée nationale", "mentions": 31 },
+      { "source": "Sénat", "mentions": 27 },
+      { "source": "Tricoteuses / Canutes", "mentions": 16 }
+    ],
+    "territorialDistribution": [
+      { "territory": "Rennes", "companies": 860, "jobs": 12100, "budgetShare": 35 },
+      { "territory": "Dijon", "companies": 720, "jobs": 9300, "budgetShare": 29 },
+      { "territory": "Montpellier", "companies": 680, "jobs": 8800, "budgetShare": 36 }
+    ],
+    "alignmentScores": [
+      { "dimension": "Budget", "score": 82 },
+      { "dimension": "Brevets", "score": 65 },
+      { "dimension": "Entreprises", "score": 88 },
+      { "dimension": "Territoires", "score": 91 },
+      { "dimension": "Parlement", "score": 69 }
+    ]
+  }
+}

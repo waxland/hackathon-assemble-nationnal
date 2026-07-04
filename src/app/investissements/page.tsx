@@ -7,7 +7,7 @@ import { getProgrammes, getTotalBudget } from "@/data/investments";
 import { formatCompactEuro, formatNumber } from "@/lib/format";
 
 export const metadata: Metadata = {
-  title: "Investissements | Minerve.fr",
+  title: "Investissements | Minerve",
 };
 
 export default function InvestmentsPage() {
@@ -28,9 +28,21 @@ export default function InvestmentsPage() {
       </section>
 
       <SimpleGrid cols={{ base: 1, md: 3 }} spacing="lg">
-        <KpiCard label="Budget total 2026" value={formatCompactEuro(getTotalBudget("2026"))} />
-        <KpiCard label="Programmes" value={formatNumber(programmes.length)} />
-        <KpiCard label="Source actuelle" value="Mock France 2030" />
+        <KpiCard
+          icon="money"
+          label="Budget total 2026"
+          value={formatCompactEuro(getTotalBudget("2026"))}
+        />
+        <KpiCard
+          icon="binders"
+          label="Programmes"
+          value={formatNumber(programmes.length)}
+        />
+        <KpiCard
+          icon="catalog"
+          label="Source actuelle"
+          value="Mock France 2030"
+        />
       </SimpleGrid>
 
       <BudgetPie />

@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0.0",
+  "updatedAt": "2026-07-04",
+  "isMock": true,
+  "programmes": {
+    "421": {
+      "documents": [
+        {
+          "documentId": "mock-an-421-question-recherche",
+          "source": "Assemblée nationale",
+          "documentType": "question",
+          "title": "Question sur les plateformes scientifiques nationales",
+          "publishedAt": "2025-11-18",
+          "author": "Député fictif",
+          "url": "",
+          "matchedKeywords": ["recherche publique", "plateformes"],
+          "mentionCount": 3,
+          "confidence": 0.66
+        }
+      ]
+    },
+    "422": {
+      "documents": [
+        {
+          "documentId": "mock-senat-422-report-deeptech",
+          "source": "Sénat",
+          "documentType": "rapport",
+          "title": "Rapport sur le transfert deeptech depuis la recherche publique",
+          "publishedAt": "2025-10-09",
+          "author": "Rapporteur fictif",
+          "url": "",
+          "matchedKeywords": ["deeptech", "SATT", "brevets"],
+          "mentionCount": 4,
+          "confidence": 0.7
+        }
+      ]
+    },
+    "423": {
+      "documents": [
+        {
+          "documentId": "mock-an-423-debate-industry",
+          "source": "Assemblée nationale",
+          "documentType": "débat",
+          "title": "Débat sur la robotisation des PME industrielles",
+          "publishedAt": "2025-12-02",
+          "author": "Compte rendu fictif",
+          "url": "",
+          "matchedKeywords": ["robotisation", "PME", "industrie"],
+          "mentionCount": 5,
+          "confidence": 0.72
+        }
+      ]
+    },
+    "424": {
+      "documents": [
+        {
+          "documentId": "mock-tricoteuses-424-sovereignty",
+          "source": "Tricoteuses / Canutes",
+          "documentType": "texte consolidé",
+          "title": "Discussion sur les filières stratégiques et la souveraineté industrielle",
+          "publishedAt": "2025-11-27",
+          "author": "Extraction fictive",
+          "url": "",
+          "matchedKeywords": ["souveraineté", "semi-conducteurs", "énergie"],
+          "mentionCount": 8,
+          "confidence": 0.78
+        }
+      ]
+    },
+    "425": {
+      "documents": [
+        {
+          "documentId": "mock-senat-425-territories",
+          "source": "Sénat",
+          "documentType": "question",
+          "title": "Question sur les pôles d'innovation en région",
+          "publishedAt": "2025-09-23",
+          "author": "Sénateur fictif",
+          "url": "",
+          "matchedKeywords": ["territoires", "pôles", "incubateurs"],
+          "mentionCount": 4,
+          "confidence": 0.64
+        }
+      ]
+    }
+  }
+}

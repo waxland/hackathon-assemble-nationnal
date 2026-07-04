@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "1.0.0",
+  "updatedAt": "2026-07-04",
+  "isMock": true,
+  "programmes": {
+    "421": {
+      "programmeCode": "421",
+      "programmeName": "Soutien des progrès de l'enseignement et de la recherche",
+      "shortName": "Recherche et infrastructures scientifiques",
+      "theme": "Recherche",
+      "reportRoute": "/investissements/421",
+      "primaryTags": ["recherche", "formation", "laboratoires", "plateformes"],
+      "ownerHint": "Équipe DATA budget + recherche publique"
+    },
+    "422": {
+      "programmeCode": "422",
+      "programmeName": "Valorisation de la recherche",
+      "shortName": "Valorisation et transfert deeptech",
+      "theme": "Transfert technologique",
+      "reportRoute": "/investissements/422",
+      "primaryTags": ["deeptech", "brevets", "licences", "SATT"],
+      "ownerHint": "Équipe DATA innovation + brevets"
+    },
+    "423": {
+      "programmeCode": "423",
+      "programmeName": "Accélération de la modernisation des entreprises",
+      "shortName": "Modernisation industrielle",
+      "theme": "Industrie",
+      "reportRoute": "/investissements/423",
+      "primaryTags": ["industrie", "PME", "robotique", "numérique"],
+      "ownerHint": "Équipe DATA entreprises + NAF"
+    },
+    "424": {
+      "programmeCode": "424",
+      "programmeName": "Financement des investissements stratégiques",
+      "shortName": "Investissements stratégiques",
+      "theme": "Souveraineté",
+      "reportRoute": "/investissements/424",
+      "primaryTags": ["souveraineté", "énergie", "spatial", "semi-conducteurs"],
+      "ownerHint": "Équipe DATA filières stratégiques"
+    },
+    "425": {
+      "programmeCode": "425",
+      "programmeName": "Financement structurel des écosystèmes d'innovation",
+      "shortName": "Écosystèmes d'innovation",
+      "theme": "Territoires",
+      "reportRoute": "/investissements/425",
+      "primaryTags": ["territoires", "incubateurs", "pôles", "écosystèmes"],
+      "ownerHint": "Équipe DATA territoires + structures d'accompagnement"
+    }
+  }
+}

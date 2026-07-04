@@ -1,7 +1,8 @@
 "use client";
 
-import { Card, Stack, Text, Title } from "@mantine/core";
+import { Card, Group, Stack, Text, Title } from "@mantine/core";
 import { PieChart } from "@mantine/charts";
+import { AssetIcon } from "@/components/icons/AssetIcon";
 import { getPieData } from "@/data/investments";
 import { formatCompactEuro } from "@/lib/format";
 
@@ -11,12 +12,19 @@ export function BudgetPie() {
   return (
     <Card className="surface-card">
       <Stack gap="md">
-        <Stack gap={4}>
-          <Title order={2}>Répartition 2026</Title>
-          <Text c="dimmed">
-            Camembert des investissements France 2030 par programme budgétaire.
-          </Text>
-        </Stack>
+        <Group align="flex-start" gap="md" wrap="nowrap">
+          <AssetIcon
+            className="section-icon"
+            name="data-visualization"
+            size={58}
+          />
+          <Stack gap={4}>
+            <Title order={2}>Répartition 2026</Title>
+            <Text c="dimmed">
+              Camembert des investissements France 2030 par programme budgétaire.
+            </Text>
+          </Stack>
+        </Group>
         <PieChart
           data={data}
           h={320}

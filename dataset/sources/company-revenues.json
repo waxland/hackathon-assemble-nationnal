@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "1.0.0",
+  "updatedAt": "2026-07-04",
+  "isMock": true,
+  "programmes": {
+    "421": {
+      "revenues": [
+        {
+          "siren": "421000001",
+          "companyName": "LabScale",
+          "fiscalYear": 2025,
+          "revenue": 18400000,
+          "currency": "EUR",
+          "sourceName": "Mock comptes annuels",
+          "sourceUrl": "",
+          "confidence": 0.52
+        }
+      ]
+    },
+    "422": {
+      "revenues": [
+        {
+          "siren": "422000001",
+          "companyName": "BioPulse",
+          "fiscalYear": 2025,
+          "revenue": 27600000,
+          "currency": "EUR",
+          "sourceName": "Mock comptes annuels",
+          "sourceUrl": "",
+          "confidence": 0.55
+        }
+      ]
+    },
+    "423": {
+      "revenues": [
+        {
+          "siren": "423000001",
+          "companyName": "FactoryOS",
+          "fiscalYear": 2025,
+          "revenue": 63200000,
+          "currency": "EUR",
+          "sourceName": "Mock comptes annuels",
+          "sourceUrl": "",
+          "confidence": 0.58
+        }
+      ]
+    },
+    "424": {
+      "revenues": [
+        {
+          "siren": "424000001",
+          "companyName": "ChipFoundry",
+          "fiscalYear": 2025,
+          "revenue": 118400000,
+          "currency": "EUR",
+          "sourceName": "Mock comptes annuels",
+          "sourceUrl": "",
+          "confidence": 0.57
+        }
+      ]
+    },
+    "425": {
+      "revenues": [
+        {
+          "siren": "425000001",
+          "companyName": "TerritoiresLab",
+          "fiscalYear": 2025,
+          "revenue": 9200000,
+          "currency": "EUR",
+          "sourceName": "Mock comptes annuels",
+          "sourceUrl": "",
+          "confidence": 0.49
+        }
+      ]
+    }
+  }
+}

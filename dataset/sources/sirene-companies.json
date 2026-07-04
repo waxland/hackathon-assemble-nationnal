@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "1.0.0",
+  "updatedAt": "2026-07-04",
+  "isMock": true,
+  "programmes": {
+    "421": {
+      "companies": [
+        {
+          "siren": "421000001",
+          "name": "LabScale",
+          "nafCode": "7219Z",
+          "nafLabel": "Recherche-développement en autres sciences physiques et naturelles",
+          "legalCategory": "SAS",
+          "city": "Grenoble",
+          "region": "Auvergne-Rhône-Alpes",
+          "workforceRange": "50-99",
+          "administrativeStatus": "A",
+          "matchedKeywords": ["laboratoires", "instrumentation"],
+          "confidence": 0.71
+        }
+      ]
+    },
+    "422": {
+      "companies": [
+        {
+          "siren": "422000001",
+          "name": "BioPulse",
+          "nafCode": "7211Z",
+          "nafLabel": "Recherche-développement en biotechnologie",
+          "legalCategory": "SAS",
+          "city": "Lyon",
+          "region": "Auvergne-Rhône-Alpes",
+          "workforceRange": "50-99",
+          "administrativeStatus": "A",
+          "matchedKeywords": ["deeptech", "biotech"],
+          "confidence": 0.77
+        }
+      ]
+    },
+    "423": {
+      "companies": [
+        {
+          "siren": "423000001",
+          "name": "FactoryOS",
+          "nafCode": "6201Z",
+          "nafLabel": "Programmation informatique",
+          "legalCategory": "SAS",
+          "city": "Nantes",
+          "region": "Pays de la Loire",
+          "workforceRange": "100-199",
+          "administrativeStatus": "A",
+          "matchedKeywords": ["logiciels industriels", "PME"],
+          "confidence": 0.74
+        }
+      ]
+    },
+    "424": {
+      "companies": [
+        {
+          "siren": "424000001",
+          "name": "ChipFoundry",
+          "nafCode": "2611Z",
+          "nafLabel": "Fabrication de composants électroniques",
+          "legalCategory": "SAS",
+          "city": "Grenoble",
+          "region": "Auvergne-Rhône-Alpes",
+          "workforceRange": "50-99",
+          "administrativeStatus": "A",
+          "matchedKeywords": ["semi-conducteurs", "souveraineté"],
+          "confidence": 0.82
+        }
+      ]
+    },
+    "425": {
+      "companies": [
+        {
+          "siren": "425000001",
+          "name": "TerritoiresLab",
+          "nafCode": "7022Z",
+          "nafLabel": "Conseil pour les affaires et autres conseils de gestion",
+          "legalCategory": "SAS",
+          "city": "Rennes",
+          "region": "Bretagne",
+          "workforceRange": "20-49",
+          "administrativeStatus": "A",
+          "matchedKeywords": ["incubateurs", "territoires"],
+          "confidence": 0.68
+        }
+      ]
+    }
+  }
+}

@@ -21,8 +21,8 @@ export async function generateMetadata({
 
   return {
     title: programme
-      ? `${programme.programmeCode} - ${programme.report.title} | Minerve.fr`
-      : "Rapport | Minerve.fr",
+      ? `${programme.programmeCode} - ${programme.report.title} | Minerve`
+      : "Rapport | Minerve",
   };
 }
 

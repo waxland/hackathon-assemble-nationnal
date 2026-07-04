@@ -1,8 +1,8 @@
-# AGENTS.md - Règles projet Minerve.fr
+# AGENTS.md - Règles projet Minerve
 
 ## Mission produit
 
-Minerve.fr est un POC sobre, institutionnel, inspiré de `sites.beta.gouv.fr`.
+Minerve est un POC sobre, institutionnel, inspiré de `sites.beta.gouv.fr`.
 
 Le produit doit expliquer les investissements France 2030 et les relier à des signaux d'innovation mockés :
 
@@ -52,6 +52,15 @@ src/
     globals.css
   theme/
     mantineTheme.ts
+dataset/
+  catalog/
+  budget/
+  reports/
+  dataviz/
+  sources/
+  matching/
+  metrics/
+  schema/
 ```
 
 Éviter les dossiers `features/*` tant que le POC reste petit.
@@ -104,13 +113,21 @@ Ne pas ajouter de grosses illustrations, gradients décoratifs, landing marketin
 
 ## Données
 
-Toutes les données mockées doivent rester centralisées dans :
+Les données brutes mockées doivent être rangées dans :
+
+```txt
+dataset/
+```
+
+La façade applicative typée doit rester centralisée dans :
 
 ```txt
 src/data/investments.ts
 ```
 
-Les mocks sont acceptés et souhaités pour l'instant. Ils doivent rester plausibles, cohérents et faciles à remplacer par de vraies sources.
+Les mocks sont acceptés et souhaités pour l'instant. Ils doivent rester plausibles, cohérents et faciles à remplacer par de vraies sources. Les composants ne doivent pas importer directement les JSON : ils passent par `src/data/investments.ts`.
+
+`TODO_DATASET_JSON.md` est le contrat à destination de l'équipe DATA. Les fichiers déjà branchés au front restent dans `dataset/budget`, `dataset/reports` et `dataset/dataviz`. Les fichiers source à compléter restent dans `dataset/sources`, `dataset/matching` et `dataset/metrics`.
 
 Ne pas intégrer de secrets ni d'identifiants de base de données dans le code.
 

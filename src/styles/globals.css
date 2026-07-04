@@ -35,10 +35,35 @@ a {
 
 .brand-link {
   display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--minerve-ink);
+  background-image: none !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+}
+
+.brand-link *,
+.brand-link:hover,
+.brand-link:focus,
+.brand-link:visited {
+  background-image: none !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+}
+
+.brand-icon {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.brand-copy {
+  display: flex;
+  min-width: 0;
   flex-direction: column;
   gap: 0.1rem;
-  color: var(--minerve-ink);
-  text-decoration: none;
 }
 
 .nav-link {
@@ -113,6 +138,23 @@ a {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
 }
 
+.asset-icon {
+  display: block;
+  flex: 0 0 auto;
+  object-fit: contain;
+}
+
+.card-icon,
+.feature-icon,
+.section-icon,
+.slide-icon,
+.footer-icon {
+  padding: 0.35rem;
+  border: 1px solid #ececfe;
+  border-radius: 8px;
+  background: #f7f7ff;
+}
+
 .feature-card {
   display: flex;
   min-height: 13rem;
@@ -152,9 +194,17 @@ a {
 }
 
 .report-nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
   color: var(--minerve-blue);
   font-weight: 700;
   text-decoration: none;
+}
+
+.report-nav-icon {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .report-slide {
@@ -170,6 +220,13 @@ a {
   background: #fafafa;
 }
 
+.chart-panel {
+  padding: 1rem;
+  border: 1px solid var(--minerve-border);
+  border-radius: 8px;
+  background: #fafafa;
+}
+
 @media (max-width: 62rem) {
   .report-layout {
     grid-template-columns: 1fr;
@@ -177,5 +234,16 @@ a {
 
   .report-sidebar {
     position: static;
+  }
+}
+
+@media (max-width: 36rem) {
+  .brand-icon {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  .brand-copy span:last-child {
+    display: none;
   }
 }
