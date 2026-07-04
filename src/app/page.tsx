@@ -70,7 +70,7 @@ export default function HomePage() {
               Ouvrir un rapport
             </Link>
             <Link className="secondary-button" href={routes.presentationFigma}>
-              Pitch Deck (Figma)
+              Pitch Deck
             </Link>
             <Link className="secondary-button" href={routes.exploration}>
               Exploration (Nuage de points)
