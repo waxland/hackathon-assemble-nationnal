@@ -71,9 +71,6 @@ export default function HomePage() {
             <Link className="secondary-button" href={routes.presentationFigma}>
               Pitch Deck (Figma)
             </Link>
-            <Link className="secondary-button" href={routes.presentation}>
-              Pitch Deck (Texte)
-            </Link>
           </Group>
         </Stack>
       </section>

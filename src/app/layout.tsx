@@ -1,11 +1,11 @@
-import type { Metadata } from "next";
-import Link from "next/link";
 import { DsfrHeadBase } from "@codegouvfr/react-dsfr/next-app-router/DsfrHead";
 import { createGetHtmlAttributes } from "@codegouvfr/react-dsfr/next-app-router/getHtmlAttributes";
-import { Providers } from "./providers";
-import "@mantine/core/styles.css";
 import "@mantine/charts/styles.css";
+import "@mantine/core/styles.css";
+import type { Metadata } from "next";
+import Link from "next/link";
 import "../styles/globals.css";
+import { Providers } from "./providers";
 
 const { getHtmlAttributes } = createGetHtmlAttributes({
   defaultColorScheme: "system",
@@ -27,7 +27,11 @@ export default function RootLayout({
       <head>
         <DsfrHeadBase
           Link={Link}
-          preloadFonts={["Marianne-Regular", "Marianne-Medium", "Marianne-Bold"]}
+          preloadFonts={[
+            "Marianne-Regular",
+            "Marianne-Medium",
+            "Marianne-Bold",
+          ]}
           doDisableFavicon
         />
         <link rel="icon" href="/favicon.ico" sizes="any" />
