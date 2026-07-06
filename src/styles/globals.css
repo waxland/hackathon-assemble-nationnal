@@ -164,6 +164,35 @@ a {
   border-radius: 8px;
 }
 
+.pdf-preview-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.72fr) minmax(18rem, 1fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
+  padding: clamp(1.5rem, 4vw, 3rem) 0;
+  border-top: 1px solid var(--minerve-border);
+  border-bottom: 1px solid var(--minerve-border);
+}
+
+.pdf-preview-copy {
+  min-width: 0;
+}
+
+.pdf-preview-frame {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--minerve-border);
+  border-radius: 8px;
+  background: #eeeeee;
+}
+
+.pdf-preview-frame iframe {
+  display: block;
+  width: 100%;
+  height: clamp(28rem, 55vw, 42rem);
+  border: 0;
+}
+
 .budget-chart-panel,
 .budget-summary-panel {
   min-width: 0;
@@ -248,6 +277,10 @@ a {
 }
 
 @media (max-width: 62rem) {
+  .pdf-preview-section {
+    grid-template-columns: 1fr;
+  }
+
   .report-layout {
     grid-template-columns: 1fr;
   }
@@ -273,5 +306,9 @@ a {
 
   .budget-legend-row > *:last-child {
     grid-column: 2;
+  }
+
+  .pdf-preview-frame iframe {
+    height: 30rem;
   }
 }

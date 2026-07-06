@@ -4,7 +4,7 @@ import { getProgrammes, getTotalBudget } from "@/data/investments";
 import { formatCompactEuro, formatNumber } from "@/lib/format";
 import { routes } from "@/lib/routes";
 import { Group, SimpleGrid, Stack, Text, Title } from "@mantine/core";
-import { IconArrowRight } from "@tabler/icons-react";
+import { IconArrowRight, IconDownload, IconFileText } from "@tabler/icons-react";
 import Link from "next/link";
 
 type FeatureItem = {
@@ -38,6 +38,11 @@ const featureItems: FeatureItem[] = [
   },
 ];
 
+const hackathonPdf = {
+  fileName: "Hackathon Archive Nationnal - Minerve.pdf",
+  href: "/documents/hackathon-archive-nationnal-minerve.pdf",
+} as const;
+
 export default function HomePage() {
   const programmes = getProgrammes();
 
@@ -69,14 +74,59 @@ export default function HomePage() {
             >
               Ouvrir un rapport
             </Link>
-            <Link className="secondary-button" href={routes.presentationFigma}>
-              Pitch Deck
-            </Link>
+            <a className="secondary-button" href="#pdf-preview">
+              Présentation Support
+              <IconFileText size={18} />
+            </a>
             <Link className="secondary-button" href={routes.exploration}>
               Exploration (Nuage de points)
             </Link>
           </Group>
         </Stack>
+      </section>
+
+      <section
+        aria-labelledby="pdf-preview-title"
+        className="pdf-preview-section"
+        id="pdf-preview"
+      >
+        <Stack className="pdf-preview-copy" gap="md">
+          <Text c="blueFrance.9" fw={800} size="sm" tt="uppercase">
+            Archive de démonstration
+          </Text>
+          <Title id="pdf-preview-title" order={2}>
+            Présentation Support Hackathon Archive Nationnal - Minerve
+          </Title>
+          <Text c="dimmed" size="lg">
+            Consultez le support PDF du POC Minerve directement dans la page,
+            ou téléchargez le fichier pour le partager hors ligne.
+          </Text>
+          <Group>
+            <a
+              className="primary-button"
+              download={hackathonPdf.fileName}
+              href={hackathonPdf.href}
+            >
+              Télécharger le PDF
+              <IconDownload size={18} />
+            </a>
+            <a
+              className="secondary-button"
+              href={hackathonPdf.href}
+              rel="noreferrer"
+              target="_blank"
+            >
+              Ouvrir l'aperçu
+              <IconFileText size={18} />
+            </a>
+          </Group>
+        </Stack>
+        <div className="pdf-preview-frame">
+          <iframe
+            src={`${hackathonPdf.href}#toolbar=0&navpanes=0`}
+            title="Présentation Support Hackathon Archive Nationnal - Minerve"
+          />
+        </div>
       </section>
 
       <SimpleGrid cols={{ base: 1, md: 3 }} spacing="lg">
